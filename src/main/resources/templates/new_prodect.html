@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Prodect Management</title>
+</head>
+<body>
+<div>
+<h1>
+Prodect mangement system
+</h1>
+<h2>new prodect</h2>
+<form action="#" th:action="@{/saveprodect}" th:object="${prodect}" method="POST">
+<input type="text" th:field="*{name}"/>
+<input type="text" th:field="*{price}"/>
+
+<button type="submit">save prodect</button>
+
+
+
+</form>
+</div>
+<hr>
+<a th:href="@{/}">back to prodect list</a>
+
+</body>
+</html>
